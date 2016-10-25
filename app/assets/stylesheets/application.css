@@ -12,6 +12,8 @@
  *
  *= materialize
  *= materialize.min
+ *= main
+ *= style
  *= require_tree .
  *= require_self
  */
