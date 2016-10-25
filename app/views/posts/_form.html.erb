@@ -14,6 +14,12 @@
 	      </div>
 	      <div class="row">
 	        <div class="input-field col s12">
+	          <input id="username" type="text" class="validate">
+	          <label for="username">User Name</label>
+	        </div>
+	      </div>
+	      <div class="row">
+	        <div class="input-field col s12">
 	          <input id="password" type="password" class="validate">
 	          <label for="password">Password</label>
 	        </div>
@@ -38,8 +44,8 @@
         </div>
 			  <div class="row">
 		      <div class="input-field col s12">
-		        <input id="username" type="text" class="validate">
-		        <label for="username">Description</label>
+		      	<textarea id="textarea1" class="materialize-textarea"></textarea>
+          	<label for="textarea1">Description</label>
 		      </div>
 			  </div>
 		    <div class="row">
@@ -66,7 +72,7 @@
 		    <div class="row">
 		      <div class="input-field col s12 center">
 		      	<button class="waves-effect waves-light btn">Create</button>
-		      	<button  class="waves-effect waves-light btn">Cancel</button>        
+		      	<a class="waves-effect waves-light btn" href="/">Cancel</a>        
 		      </div>
 		    </div>
 	    </form>
@@ -81,7 +87,8 @@
 	$(document).ready(function() {
     $('select').material_select();
   });
-  $(document).ready(function() {
-    $('input#input_text, textarea#textarea1').characterCounter();
-  });     
+  // $(document).ready(function() {
+  //   $('input#input_text, textarea#textarea1').characterCounter();
+  // });
+  $('#textarea1').trigger('autoresize');     
 </script>
