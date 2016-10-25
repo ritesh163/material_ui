@@ -1,0 +1,43 @@
+
+.icon-block h5{
+	font-size:20px;
+	text-align:center;
+}
+.icon-block h2{
+	text-align:center;
+	margin-bottom:0px;
+	color:#EE6E73;
+}
+.icon-block p{
+	text-align:center;
+}
+.navigation  ul a, .navigation .brand-logo {
+	color: #fff;
+}
+footer.page-footer .bottom-footer  .footer-copyright{
+	background-color:#333;
+}
+.teal a:hover{
+	color:#EE6E73;
+}
+.teal a{
+	color:#fff;
+}
+.new-form{
+	float:none !important;
+	margin:0 auto;
+	border:1px solid #d6d6d6;
+	border-radius: 5px;
+	margin-top: 50px;
+}
+
+.new-form form .row{
+	margin:0px;
+	
+}
+#index-banner h1{
+	margin-bottom:0px ;
+	color:#fff;
+	font-size: 48px;
+	margin-top:80px;
+}

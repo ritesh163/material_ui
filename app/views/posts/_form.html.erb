@@ -1,0 +1,87 @@
+<div class="row">
+	<div class="col l6 s12 new-form">
+    <div class="row">
+	    <form class="col s12">
+	      <div class="row">
+	        <div class="input-field col s6">
+	          <input id="first_name" type="text" class="validate">
+	          <label for="first_name">First Name</label>
+	        </div>
+	        <div class="input-field col s6">
+	          <input id="last_name" type="text" class="validate" >
+	          <label for="last_name">Last Name</label>
+	        </div>
+	      </div>
+	      <div class="row">
+	        <div class="input-field col s12">
+	          <input id="password" type="password" class="validate">
+	          <label for="password">Password</label>
+	        </div>
+	      </div>
+	      <div class="row">
+	        <div class="input-field col s12">
+	          <input id="email" type="email" class="validate">
+	          <label for="email">Email</label>
+	        </div>
+	      </div>
+	      <div class="row">
+			    <div class="col s12">
+			      <input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" />
+			      <label for="filled-in-box">Remember Me</label>
+			    </div>
+				</div>
+				<div class="row">
+          <div class="input-field col s12">
+          	<label for="dob"> Birthday</label>
+            <input type="date" class="datepicker"> 
+          </div>
+        </div>
+			  <div class="row">
+		      <div class="input-field col s12">
+		        <input id="username" type="text" class="validate">
+		        <label for="username">Description</label>
+		      </div>
+			  </div>
+		    <div class="row">
+			    <div class="input-field col s12">
+				    <select>
+				      <option value="" disabled selected>Choose your option</option>
+				      <option value="1">Option 1</option>
+				      <option value="2">Option 2</option>
+				      <option value="3">Option 3</option>
+				    </select>
+				    <label>Select</label>
+			    </div>
+			  </div>
+			  <div class="row">
+				  <div class="col l6 s12">
+			    	<input name="group1" type="radio" id="test1" />
+			      <label for="test1">Male</label>
+			    </div>
+			    <div class="col l6 s12">
+			      <input name="group1" type="radio" id="test2" />
+			      <label for="test2">Female</label>
+			    </div>
+				</div>
+		    <div class="row">
+		      <div class="input-field col s12 center">
+		      	<button class="waves-effect waves-light btn">Create</button>
+		      	<button  class="waves-effect waves-light btn">Cancel</button>        
+		      </div>
+		    </div>
+	    </form>
+  	</div>
+  </div>
+</div>
+<script>
+	$('.datepicker').pickadate({
+    selectMonths: true,
+    selectYears: 15
+  });
+	$(document).ready(function() {
+    $('select').material_select();
+  });
+  $(document).ready(function() {
+    $('input#input_text, textarea#textarea1').characterCounter();
+  });     
+</script>
